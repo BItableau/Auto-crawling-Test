@@ -2,7 +2,7 @@ name: Run Crawler - Update data
 
 on: #[push]
   schedule: 
-    - cron: '11 5 * * *'
+    - cron: '0 23 * * *'  # 한국 시간 매일 아침 8:00 Data Update workflow 실행 요청 전송됨 (실제 workflow 실행 시간은 요청된 후 20min ~ 1h 정도임 -- delay 존재) 
 
 jobs:
   build:
